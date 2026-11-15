@@ -1,16 +1,32 @@
+import pygame
+from PIL import Image
+import turtle
+
+
+
 def main():
-# main function
+    pygame.init()
+
+    display = pygame.display.set_mode((990, 660))
+
+    background = pygame.image.load('eas.jpg')
+
+    running = True
+    while running:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+        display.blit(background, (0,0))
+        pygame.display.update()
+
+    pygame.quit()
 
 
-def open_surfaces():
-# open original images as well as the surface to draw on
-
-
-def draw():
+#class sketch():
 # draw using the arrow keys, including diagonally
 
 
-def shake():
+#class shake():
 # shake the canvas to erase the drawings
 
 
