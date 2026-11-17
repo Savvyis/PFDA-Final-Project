@@ -5,7 +5,7 @@ import pygame
 
 class Sketch():
 
-    def __init__(self, x, y, color=(50, 50, 50), size=1, speed=4):
+    def __init__(self, x, y, color=(50, 50, 50), size=5, speed=4):
         self.x = x
         self.y = y
         self.color = color
@@ -27,8 +27,6 @@ class Sketch():
         
     def draw(self, surface):
         pygame.draw.rect(surface, self.color, (self.x, self.y, self.size, self.size))
-
-# draw using the arrow keys, including diagonally
 
 
 #class Shake():
