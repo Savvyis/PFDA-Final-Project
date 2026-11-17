@@ -1,16 +1,18 @@
 import pygame
-from PIL import Image
-import turtle
+import sys
 
 
 
 def main():
     pygame.init()
-
     display = pygame.display.set_mode((990, 660))
-
     background = pygame.image.load('eas.jpg')
-
+    x, y = (229.35, 97.35)
+    width, height = (529.65, 332)
+    surf = pygame.Surface((width, height))
+    surf.fill((211, 211, 211))
+    background.blit(surf, (x, y))
+    #drawing = Sketch()
     running = True
     while running:
         for event in pygame.event.get():
@@ -22,11 +24,15 @@ def main():
     pygame.quit()
 
 
-#class sketch():
+#class Sketch():
+
+    #def __init__(self):
+        
+
 # draw using the arrow keys, including diagonally
 
 
-#class shake():
+#class Shake():
 # shake the canvas to erase the drawings
 
 
